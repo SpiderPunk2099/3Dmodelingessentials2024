@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
-//Name: First Project Pt.2 Hammer 2024
-//Last modified: Mon, Jan 22, 2024 07:49:25 PM
+//Name: First Project Pt2 hammer 2024.ma
+//Last modified: Mon, Jan 22, 2024 07:49:43 PM
 //Codeset: UTF-8
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.4.1";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.2";
-fileInfo "UUID" "F81F8B2A-3541-3611-5D3E-6AAD7901B300";
+fileInfo "UUID" "E60084A6-6A49-2190-ABF9-609406CF0647";
 createNode transform -s -n "persp";
 	rename -uid "DA422636-924A-0205-6102-A2A87C66122B";
 	setAttr ".v" no;
@@ -217,7 +217,7 @@ createNode polyCone -n "polyCone1";
 	rename -uid "75D32CCF-0544-E404-13F3-6EB4DFB1AAB6";
 	setAttr ".cuv" 3;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "03924C43-3344-5CC2-1C69-8A9E2776CF25";
+	rename -uid "0CED5A87-2746-A203-F2FF-7FA0450357F4";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
@@ -280,4 +280,4 @@ connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pSphereShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pTorusShape1.iog" ":initialShadingGroup.dsm" -na;
 connectAttr "pConeShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of First Project Pt.2 Hammer 2024
+// End of First Project Pt2 hammer 2024.ma
