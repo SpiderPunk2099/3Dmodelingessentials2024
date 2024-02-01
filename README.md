@@ -1,4 +1,5 @@
 # 3Dmodelingessentials2024
+#lab 01b
 <img width="1440" alt="Better Chair 3:4" src="https://github.com/SpiderPunk2099/3Dmodelingessentials2024/assets/143057060/1dcc95b2-aa18-473e-9532-ffb2b55d38f5">
 <img width="1440" alt="Better Chair Front" src="https://github.com/SpiderPunk2099/3Dmodelingessentials2024/assets/143057060/14021c89-c691-4b46-b54b-165c3c07dd36">
 <img width="1440" alt="Better Chair Side" src="https://github.com/SpiderPunk2099/3Dmodelingessentials2024/assets/143057060/b60830a4-8606-4a68-8b11-083c4496b102">
