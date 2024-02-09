@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Lamp UV Mapping.ma
-//Last modified: Thu, Feb 08, 2024 08:53:46 PM
+//Last modified: Fri, Feb 09, 2024 02:25:55 PM
 //Codeset: UTF-8
 requires maya "2024";
 currentUnit -l centimeter -a degree -t film;
@@ -9,23 +9,23 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.2";
-fileInfo "UUID" "24DD768C-1D44-C5D0-4FC8-37BD4AEF6A3B";
+fileInfo "UUID" "8F5ADBC7-3E4B-9E17-B736-7F92002CB8EF";
 createNode transform -s -n "persp";
 	rename -uid "A2745775-1342-BA1D-8E11-A7A612668441";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -7.2045542628004826 7.8819300433905086 14.528326198644699 ;
-	setAttr ".r" -type "double3" -6.9629614582701738 -26.248653977536641 1.8240925225813249e-13 ;
-	setAttr ".rp" -type "double3" 3.3306690738754696e-16 0 -3.5527136788005009e-15 ;
-	setAttr ".rpt" -type "double3" 1.1546356471769221e-14 -3.039012056423014e-15 -1.0762447345881319e-14 ;
+	setAttr ".t" -type "double3" -15.917271898356363 8.4785488299430565 2.6612049667418001 ;
+	setAttr ".r" -type "double3" -9.0771968646576191 -80.419209153541658 4.7296079173093794e-13 ;
+	setAttr ".rp" -type "double3" 2.2204460492503131e-16 8.8817841970012523e-16 -3.5527136788005009e-15 ;
+	setAttr ".rpt" -type "double3" 1.6318086332498744e-14 -3.6334917647513687e-15 -3.0127503531268358e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "ACCF87BA-574D-F2DE-62EC-049A3CEA12B6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 16.303579759886055;
+	setAttr ".coi" 16.303579759886059;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.047188588214734928 5.905484698058455 0.013764772816367454 ;
+	setAttr ".tp" -type "double3" -0.042423404203587367 5.9064133606383713 -0.018350481874040536 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "94F7CF61-224F-7883-FE48-B399438D3193";
@@ -409,20 +409,20 @@ createNode mesh -n "wholeLampShape" -p "wholeLamp";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "67561A77-4E45-B194-A844-E28FCF812DD7";
+	rename -uid "32B3E7CB-774D-B8A3-8F74-BA928037574A";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "362C0FC3-6445-9EB7-28E1-5AA8D577D333";
+	rename -uid "31218A16-C245-70DD-1656-B1BE2DA3E630";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E2455775-7846-C625-F304-269786A6A998";
+	rename -uid "68F25A83-A543-419A-C019-73B77AA576D2";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "D8AFD4D1-D140-D687-F594-6C9A10C78A29";
+	rename -uid "18F2BE3E-424C-5F25-C5CA-CEACAC0ACC6D";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "884ECE87-E44B-862C-0183-D8B1A91D43B8";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "9FC45448-DF42-8F6D-2712-B8862BF45CBB";
+	rename -uid "4D558597-6042-45C0-8067-878E659F4D94";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5546403A-8A4D-9A68-BAFF-128E6D44FCF8";
 	setAttr ".g" yes;
