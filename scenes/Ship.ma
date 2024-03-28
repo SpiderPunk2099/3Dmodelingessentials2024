@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Ship.ma
-//Last modified: Wed, Mar 27, 2024 05:58:02 PM
+//Last modified: Wed, Mar 27, 2024 06:39:17 PM
 //Codeset: UTF-8
 requires maya "2024";
 currentUnit -l centimeter -a degree -t film;
@@ -9,24 +9,24 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202310181224-69282f2959";
 fileInfo "osv" "Mac OS X 14.2";
-fileInfo "UUID" "07B76366-A744-5C5C-BB69-1D83D18E988D";
+fileInfo "UUID" "65DDD84E-6D42-5BBE-F350-959525483F20";
 createNode transform -s -n "persp";
 	rename -uid "48B68109-454A-B8DC-B9EB-DDB35EEC0F15";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 23.320200735526868 4.3032894900808465 -16.836320128320629 ;
-	setAttr ".r" -type "double3" 173.39022262665719 43.075638432529807 -179.99999999999991 ;
-	setAttr ".rp" -type "double3" 0 6.6613381477509392e-16 0 ;
-	setAttr ".rpt" -type "double3" 5.2348831598229565e-15 -6.6257507595129714e-16 -1.4746080426486525e-14 ;
+	setAttr ".t" -type "double3" 10.496905715294513 3.1976018700900428 12.263943099701278 ;
+	setAttr ".r" -type "double3" 170.52962322097792 87.628839255302353 179.99999999999994 ;
+	setAttr ".rp" -type "double3" -1.7763568394002505e-15 -4.4408920985006262e-16 -1.7763568394002505e-15 ;
+	setAttr ".rpt" -type "double3" 5.3901693549441596e-15 -5.1224921610082979e-17 -1.2355297540510827e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "80A35FAD-9845-EE4D-DF49-70835F68C254";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 26.487846804662979;
+	setAttr ".coi" 3.1444439941927635;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 5.3502179225976398 1.2543617745969056 2.3831956261430207 ;
+	setAttr ".tp" -type "double3" 7.3979736051828304 2.6802224392622556 12.392264314198217 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "E4009926-A346-23AD-4D03-18A5D1642951";
